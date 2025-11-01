@@ -1,0 +1,21 @@
+{
+  "name": "node-express-crashless",
+  "version": "1.0.4",
+  "description": "A minimal Express demo showing how Crashless prevents server crashes, with automated tests for async/sync error handling.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "test": "NODE_ENV=test mocha --recursive --timeout 10000"
+  },
+  "dependencies": {
+    "crashless": "^0.2.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.0",
+    "chai": "^5.1.1",
+    "supertest": "^7.0.0"
+  }
+}
